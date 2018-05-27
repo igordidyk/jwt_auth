@@ -22,5 +22,12 @@ logging:
   file: logs/jwt_app.log
   pattern:
     file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+#=====SECURITY=========
+security:
+  jwt:
+    token:
+      secret-key: secret-key
+      expire-length: 36000
+
 
 
